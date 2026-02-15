@@ -45,3 +45,12 @@
 - Footer: Tentang, Kontak, Privacy Policy links
 - Removed "How It Works" section per new spec
 - New components: TestimonialCard, BoltIcon, LinkIcon, EyeIcon
+
+### Shared Components & Interior Pages
+- Extracted `components/navbar.tsx` and `components/footer.tsx` from `app/page.tsx`
+  - Navbar uses `Link` from `next/link`, logo links to `/`, nav links use `/#fitur` and `/#harga`
+  - Footer links now point to real routes (`/tentang`, `/kontak`, `/privacy-policy`)
+- Updated `app/page.tsx` to use shared Navbar/Footer
+- Created `app/tentang/page.tsx` — About page (Bahasa Indonesia): mission, why InvoiceKirim, team quote
+- Created `app/kontak/page.tsx` — Contact page: form (nama, email, subjek, pesan) + sidebar (email, social, jam operasional)
+- Created `app/privacy-policy/page.tsx` — Privacy Policy (9 sections, Bahasa Indonesia): data collection, usage, security, cookies, third parties, user rights, changes, contact

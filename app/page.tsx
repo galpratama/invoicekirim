@@ -1,31 +1,10 @@
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Navbar */}
-      <header className="fixed top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-md">
-        <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-          <div className="font-display text-2xl tracking-tight">
-            Invoice<span className="text-accent">Kirim</span>
-          </div>
-          <div className="hidden items-center gap-8 text-sm text-muted md:flex">
-            <a href="#fitur" className="transition-colors hover:text-foreground">
-              Fitur
-            </a>
-            <a href="#harga" className="transition-colors hover:text-foreground">
-              Harga
-            </a>
-            <a href="#" className="transition-colors hover:text-foreground">
-              Login
-            </a>
-          </div>
-          <a
-            href="#"
-            className="rounded-md border border-foreground bg-foreground px-4 py-2 text-sm font-medium text-background transition-colors hover:bg-accent hover:border-accent"
-          >
-            Mulai Gratis
-          </a>
-        </nav>
-      </header>
+      <Navbar />
 
       {/* Hero */}
       <section className="mx-auto max-w-5xl px-6 pt-32 pb-20 md:pt-40 md:pb-28">
@@ -236,24 +215,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-border py-12">
-        <div className="mx-auto max-w-5xl px-6">
-          <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
-            <div className="font-display text-xl tracking-tight">
-              Invoice<span className="text-accent">Kirim</span>
-            </div>
-            <div className="flex gap-8 text-sm text-muted">
-              <a href="#" className="transition-colors hover:text-foreground">Tentang</a>
-              <a href="#" className="transition-colors hover:text-foreground">Kontak</a>
-              <a href="#" className="transition-colors hover:text-foreground">Privacy Policy</a>
-            </div>
-            <div className="text-sm text-muted">
-              &copy; 2026 InvoiceKirim
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
