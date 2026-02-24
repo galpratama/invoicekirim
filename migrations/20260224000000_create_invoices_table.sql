@@ -1,3 +1,5 @@
+-- Migration: create_invoices_table
+-- Created: 2026-02-24
 -- Table: invoices
 -- Stores all invoices created by users.
 -- Items are stored as JSONB array: [{ description, qty, price }]
